@@ -1,0 +1,24 @@
+@import '../../../../assets/styles/variables';
+
+#container-footer {
+  padding: 0.5rem 1rem;
+  background-color: $second-bg-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    color: $white-color;
+    margin-top: 10px;
+  }
+
+  .container-social-media {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .social-icon {
+    color: $primary-color;
+  }
+}
