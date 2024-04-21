@@ -8,6 +8,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatIconModule } from '@angular/material/icon';
 import { CoreModule } from './core/core.module';
 import { FilmeModule } from './modules/filmes/filme.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -16,8 +17,9 @@ import { FilmeModule } from './modules/filmes/filme.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatIconModule,
     CoreModule,
+    SharedModule,
+    MatIconModule,
     FilmeModule
   ],
   providers: [
