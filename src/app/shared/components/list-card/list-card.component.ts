@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { IFilme } from '../../../modules/filmes/models/filme.model';
 
 @Component({
   selector: 'app-list-card',
@@ -6,7 +7,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrl: './list-card.component.scss'
 })
 export class ListCardComponent {
-  @Input() posters: { poster: string, title: string, id: number }[] = []
+  @Input() filmes: IFilme[] | null = []
 
   @Output() cardClick: EventEmitter<number> = new EventEmitter<number>();
 

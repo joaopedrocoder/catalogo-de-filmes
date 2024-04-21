@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 import { IFilme } from '../models/filme.model';
 
 @Injectable({
-  providedIn: FilmeModule
+  providedIn: 'root'
 })
 export class FilmesService {
   private url = environment.API_URL
