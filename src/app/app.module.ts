@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatIconModule } from '@angular/material/icon';
 import { CoreModule } from './core/core.module';
+import { FilmeModule } from './modules/filmes/filme.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CoreModule } from './core/core.module';
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
-    CoreModule
+    CoreModule,
+    FilmeModule
   ],
   providers: [
     provideAnimationsAsync()
