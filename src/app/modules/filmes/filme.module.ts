@@ -7,6 +7,7 @@ import { FilmeDetalhesComponent } from './pages/filme-detalhes/filme-detalhes.co
 import { SharedModule } from '../../shared/shared.module';
 
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     CommonModule,
     FilmeRoutingModule,
     SharedModule,
-    MatTooltipModule
+    MatTooltipModule,
+    HttpClientModule
   ],
 })
 export class FilmeModule { }
