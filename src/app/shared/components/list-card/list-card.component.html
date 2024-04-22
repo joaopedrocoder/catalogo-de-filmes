@@ -1,8 +1,11 @@
-<div id="container-filme-list">
+<div id="container-filme-list">     
   @for (filme of filmes; track filme) {
-    <app-card-poster
-      [poster]="filme.poster_path"
-      [title]="filme.title"
-    ></app-card-poster>
+    <div>
+      <app-card-poster
+        [poster]="filme.poster_path"
+        [title]="filme.title"
+      ></app-card-poster>
+    </div>
   }
 </div>
+

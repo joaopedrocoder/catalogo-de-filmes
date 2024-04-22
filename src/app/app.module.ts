@@ -9,6 +9,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { CoreModule } from './core/core.module';
 import { FilmeModule } from './modules/filmes/filme.module';
 import { SharedModule } from './shared/shared.module';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 @NgModule({
   declarations: [

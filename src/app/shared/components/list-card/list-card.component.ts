@@ -11,6 +11,10 @@ export class ListCardComponent {
 
   @Output() cardClick: EventEmitter<number> = new EventEmitter<number>();
 
+  ngOnInit(): void {
+    console.log('FILMES', this.filmes)
+  } 
+
   onCardClick(id: number) {
     this.cardClick.emit(id);
   }
